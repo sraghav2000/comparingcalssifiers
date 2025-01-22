@@ -200,7 +200,8 @@ Best Score: 0.8872233
 Best Parameters: 'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'
 Best Score: 0.887344
 
-**Findings:**
+## Findings:
+
 - The Logistic Regression and SVM models both achieved the highest score of 0.887344, making them the best performers among the models tested.
 - The KNN model had a slightly lower score of 0.8803032, while the Decision Tree was very close to the top performers with a score of 0.8872233.
 - This suggests that for this particular task, Logistic Regression and SVM with the specified hyperparameters are the most effective models.
