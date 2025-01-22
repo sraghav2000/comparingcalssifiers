@@ -155,7 +155,7 @@ ColumnTransformer was employed to apply appropriate transformations to different
 This data preparation process ensures that the data is in a suitable format for machine learning model training and evaluation.
 
 
-## Baseline Model Comparison
+## Baseline Model
 For the baseline model, a DecisionTreeClassifier was chosen. This algorithm is well-suited for multi-class classification tasks. Decision Trees operate by recursively partitioning the data based on different feature subsets and applying decision rules at each node to create a hierarchical structure for making predictions.
 
 <img src="images/confusion-matrix.png" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
@@ -165,25 +165,6 @@ For the baseline model, a DecisionTreeClassifier was chosen. This algorithm is w
 - Low Recall: Indicates a high number of False Negatives, meaning the model incorrectly predicted that customers would not subscribe when they actually did. This could be attributed to class imbalance within the dataset (where "No" subscriptions are significantly more frequent) or suboptimal model hyperparameters.
 - Low Precision: Suggests a high number of False Positives, meaning the model incorrectly predicted that customers would subscribe when they did not. This issue also might be linked to class imbalance or insufficient model tuning.
 - The observed high number of TPs in the confusion matrix, despite the low recall and precision, is likely a consequence of the dataset's strong bias towards "No" subscriptions. In such cases, the model may be overly inclined to predict the majority class ('No') to achieve high accuracy, even if it misclassifies a significant portion of the minority class ('Yes').
-
-
-For the baseline model, decided to use a DecisionTreeClassifer which is a class capable of performing multi-class classification on a dataset. This Classifier has the ability to using different feature subsets and decision rules at different stages of classification.
-
-This model will be compared with Logistic Regression model which is used to describe data and the relationship between one dependent variable and one or more independent variables.
-
-Logistic Regression Machine Learning is quite fascinating and accomplishes some things far better than a Decision Tree when you possess a lot of time and knowledge. A Decision Tree's second restriction is that it is quite costly in terms of the sample size.
-
-In training, fitting and predicting both models on the dataset, the following results were observed:
-
-| Model Name  	        | Accuracy                              | Precision	                    | Recall 	                | F1_Score                  | Fit Time (ms) 
-|-------------	        |:------------------------------------	|:-------------------------:	|:----------------------:	|:----------------------:	|:----------------------:	|
-| Decision Tree       	| 0.887513                              | 0.443792                  	| 0.499954                  |  0.470202                 | 128                       |
-| Logistic Regression   | 0.887594                              | 0.443797                     	| 0.500000                  |  0.470225                 | 193                       |
-|             	        |                                      	|                           	|                        	|                           |                           |
-
-Quick review of this results show that accuracy scores were very close with numbers over 85%, however the recall, precision and F1_Score were below 50%.
-
-This means the classifier has a high number of False negatives which can be an outcome of imbalanced class or untuned model hyperparameters. More likely because of the imbalanced dataset with a higher number of Deposit = "No" records.
 
 ## Model Comparisons
 
