@@ -139,13 +139,19 @@ These findings suggest the bank can improve targeting by focusing on younger, ol
 To prepare the dataset for modeling, several steps were taken:
 **Data Cleaning:**
 The target variable "Y" was renamed to "deposit" for better readability and interpretability.
+
 **Feature Selection:**
 An initial set of features was selected: 'job', 'marital', 'education', 'default', 'housing', 'loan', and 'contact'.
+
 **Data Transformation:**
 ColumnTransformer was employed to apply appropriate transformations to different data types:
+
 **Categorical Features:** Transformed using techniques like one-hot encoding or label encoding.
+
 **Numerical Features:** Transformed using techniques like scaling or normalization.
+
 **Target Encoding:** The target variable ("deposit") was encoded using LabelEncoder to convert categorical labels (e.g., "yes", "no") into numerical values (e.g., 1, 0).
+
 **Data Splitting:** The dataset was divided into training and testing sets using train_test_split. 30% of the data was allocated to the test set for unbiased model evaluation.
 This data preparation process ensures that the data is in a suitable format for machine learning model training and evaluation.
 
