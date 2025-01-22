@@ -9,9 +9,9 @@ GitHub Repository for work done on Professional Certificate in Machine Learning 
 - [Business Understanding](#business-understanding)
 - [Data Understanding](#data-understanding)
 - [Data Preparation](#data-preparation)
-- [Baseline Model Comparison](#Baseline-Model)
-- [Model Comparisons](#Model-Comparisons)
-- [Improving the Model](#Improving-the-Model)
+- [Baseline Model](#Baseline-Model)
+- [Models Comparisons](#Models-Comparisons)
+- [Improving Models](#Improving-Models)
 - [Findings](#findings)
 - [Next Steps and Recommendations](#next-steps-and-recommendations)
 
@@ -165,7 +165,7 @@ For the baseline model, a DecisionTreeClassifier was chosen. This algorithm is w
 - Low Precision: Suggests a high number of False Positives, meaning the model incorrectly predicted that customers would subscribe when they did not. This issue also might be linked to class imbalance or insufficient model tuning.
 - The observed high number of TPs in the confusion matrix, despite the low recall and precision, is likely a consequence of the dataset's strong bias towards "No" subscriptions. In such cases, the model may be overly inclined to predict the majority class ('No') to achieve high accuracy, even if it misclassifies a significant portion of the minority class ('Yes').
 
-## Model Comparisons
+## Models Comparisons
 
 To establish a baseline for comparison, we will evaluate the performance of four common classification algorithms: Logistic Regression, KNN, Decision Tree, and SVM. Using the default settings for each model, we will train and evaluate their performance on the dataset. This comparison will provide insights into the relative strengths and weaknesses of each model and guide further model selection and optimization.
 
@@ -173,7 +173,7 @@ To establish a baseline for comparison, we will evaluate the performance of four
 
 Logistic Regression emerged as the most efficient and accurate model. It achieved the highest training and testing accuracies while also exhibiting the fastest training time, making it a strong contender for this classification task.
 
-## Improving the Model
+## Improving Models
 
 **Feature Engineering and Exploration:**
 
