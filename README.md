@@ -113,7 +113,6 @@ Regarding the potential outliers in the three features mentioned, the following 
 
 <img src="images/distribution-of-categorical-features.jpg" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
 
-
 Additional plots are provided below for visualization on some of the features of the dataset.
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;"> 
   <img src="images/term-deposit-subscription.png" alt="Image 1" width="25%">
@@ -157,6 +156,16 @@ This data preparation process ensures that the data is in a suitable format for 
 
 
 ## Baseline Model Comparison
+For the baseline model, a DecisionTreeClassifier was chosen. This algorithm is well-suited for multi-class classification tasks. Decision Trees operate by recursively partitioning the data based on different feature subsets and applying decision rules at each node to create a hierarchical structure for making predictions.
+
+<img src="images/confusion-matrix.png" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
+
+- In the context of our Decision Tree Classifier, the confusion matrix reveals a high number of True Positives (TPs) where the model correctly predicted 'No' (indicating no subscription to the long-term product), while the number of True Negatives (TNs) appears to be zero.
+- While the model exhibits an overall accuracy of 0.89, further analysis reveals concerningly low recall and precision scores ( below 0.51).
+- Low Recall: Indicates a high number of False Negatives, meaning the model incorrectly predicted that customers would not subscribe when they actually did. This could be attributed to class imbalance within the dataset (where "No" subscriptions are significantly more frequent) or suboptimal model hyperparameters.
+- Low Precision: Suggests a high number of False Positives, meaning the model incorrectly predicted that customers would subscribe when they did not. This issue also might be linked to class imbalance or insufficient model tuning.
+- The observed high number of TPs in the confusion matrix, despite the low recall and precision, is likely a consequence of the dataset's strong bias towards "No" subscriptions. In such cases, the model may be overly inclined to predict the majority class ('No') to achieve high accuracy, even if it misclassifies a significant portion of the minority class ('Yes').
+
 
 For the baseline model, decided to use a DecisionTreeClassifer which is a class capable of performing multi-class classification on a dataset. This Classifier has the ability to using different feature subsets and decision rules at different stages of classification.
 
