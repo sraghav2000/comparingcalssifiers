@@ -114,7 +114,13 @@ Regarding the potential outliers in the three features mentioned, the following 
 <img src="images/distribution-of-categorical-features.jpg" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
 
 
-Displayed below are some charts providing visualization on some of the observations of the dataset.
+Additional plots are provided below for visualization on some of the features of the dataset.
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;"> 
+  <img src="images/term-deposit-subscription.png" alt="Image 1" width="25%">
+  <img src="images/housing-personal-loan-deposit-subscription.png" alt="Image 1" width="55%">
+  <img src="images/age-deposit-subscription.png" alt="Image 1" width="40%">
+  <img src="images/job-deposit-subscription.png" alt="Image 1" width="40%">
+</div>
 
 ![Bar Plot of Term Deposit Outcome by Education!](./images/Bar-Plot-Term-Deposit-by-Education.jpeg)
 
