@@ -99,7 +99,7 @@ Regarding the potential outliers in the three features mentioned, the following 
 - **previous**: Outliers in this feature, with values over 5, could be reasonable if a potential customer was part of multiple marketing campaigns. In such cases, it's possible that the customer’s data was recorded across several campaigns, which may explain the high values
 
 - 
-<img src="images/distribution-of-numerical-features.png" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
+<img src="images/distribution-of-numerical-features.jpg" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
 
 Examining the data, it does not have missing values in the columns/features. Reviewing the features of the datasets like job, marital status, education, housing and personal loans to check if this has an impact on the customers where the marketing campaign was successful. 
 
