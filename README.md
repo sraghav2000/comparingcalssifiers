@@ -53,7 +53,7 @@ The overall success rate of these campaigns was relatively low, with only 8% of 
 
 The bank now aims to improve the effectiveness of future campaigns. To achieve this, we will utilize a classification approach within the machine learning framework. Classification is a supervised learning technique where the model learns to predict the class or category of an input based on labeled training data. In this case, the model will learn to predict whether a customer will subscribe to a term deposit based on historical campaign data. The trained model will then be evaluated on unseen data to assess its predictive accuracy before being implemented in live campaigns.
 
-![Machine Learning Classfication Example!](/images/machine-learning-work-flow-for-object-classification.jpeg)
+![Machine Learning Classfication Example!](./images/machine-learning-work-flow-for-object-classification.jpg)
 
 Picture above shows an example of a classification work flow shows the object classification across three different classes (cat, human and horse) to identify a human
 
