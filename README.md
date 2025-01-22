@@ -6,7 +6,6 @@ GitHub Repository for work done on Professional Certificate in Machine Learning 
  ## Contents
 - [Introduction](#introduction)
 - [How to Use the Files in This Repository](#how-to-use-the-files-in-this-repository)
-- [Project Overview](#project-overview)
 - [Business Understanding](#business-understanding)
 - [Data Understanding](#data-understanding)
 - [Data Preparation](#data-preparation)
@@ -29,13 +28,13 @@ My goal is to build and compare the performance of classifiers of various machin
 
 The repository is organized into the following directories and files:
 
-- **data**: Contains the `bank-additional-full.csv` dataset from Kaggle, used for training the machine learning model.
+- **data**: Contains the `bank-additional-full.csv` dataset used for training the machine learning models.
 - **images**: Stores image files used in the Jupyter Notebook and the project documentation.
-- **notebooks**: Contains the Jupyter Notebook titled **What Drives the Price of a Car?**, which performs the data analysis and builds the machine learning model.
+- **notebooks**: Contains the Jupyter Notebook titled **Practical Application III: Comparing Classifiers**, which performs the data analysis and builds the machine learning models.
 
 ### To use the files:
 1. Clone or download the repository.
-2. Open the Jupyter Notebook (**What Drives the Price of a Car?**).
+2. Open the Jupyter Notebook (**Practical Application III: Comparing Classifiers**).
 3. Run the cells sequentially to analyze the data, build the model, and view the results.
 
 Ensure that you have the necessary libraries installed, such as:
@@ -46,38 +45,19 @@ Ensure that you have the necessary libraries installed, such as:
 
 ---
 
-## Introduction
-
-This repository contains the Jupyter Notebook for the Application Assignment 17.1. This takes a sample jupyter notebook to complete the exercise to analyse UCI Bank Marketing Data Set in [bank-additional-full.csv](https://github.com/yemifalokun/comparingclassifiers/blob/main/data/bank-additional-full.csv) file in the data folder of this repository to build a machine learning application that uses classifications to evaluate customers that will accept the Long-term deposit application using features like job, marital status, education, housing and personal loan.
-
-The goal of this project is to compare the performance of the following classifiers namely 
-* K Nearest Neighbor
-* Logistic Regression
-* Decision Trees and 
-* Support Vector Machines
-
-In comparing the models, the training times and accuracy of the models will be recorded. This should provide an indication on the model that will provide predictions to determine which customer will accept the long term deposit bank product via a phone based marketing campaign.
-
-## How to use the files in this repository?
-
-The notebooks are grouped into the following categories:
- * ``articles`` – More information on the data and features
- * ``data`` – vehicles.csv data file from Kaggle Machine Learning dataset repository used in the notebooks
- * ``images`` – Image files used in Notebook and Project Description
- * ``notebook`` – What Drives the Price of a Car Notebook
-
-
 ## Business Understanding
 
-The business objective is to identify key features for used car prices based on the dataset provided so that Car Dealers and their Sales Team can use these key features to understand the cars that they need to have in their inventory to increase sales.
+This project examines a dataset from a Portuguese bank that implemented a series of 17 targeted telemarketing campaigns between 2008 and 2010 to promote long-term deposit subscriptions. These campaigns primarily utilized outbound calls to clients, with some supplementary online banking interactions. The dataset encompasses 79,354 client contacts, each with detailed attributes such as demographics, financial history, and campaign interactions.
 
-For this application, we are using classfication in Machine Learning as we are comparing classsifiers. Classification is a supervised machine learning method where the model tries to predict the correct label of a given input data. In classification, the model is fully trained using the training data, and then it is evaluated on test data before being used to perform prediction on new unseen data.
+The overall success rate of these campaigns was relatively low, with only 8% of contacts resulting in successful term deposit subscriptions (6,499 out of 79,354). This analysis aims to gain a deeper understanding of the factors influencing campaign success and identify key predictors of customer receptiveness to these offers.
 
-![Machine Learning Classfication Example!](./images/Machine_learning_classification_illustration_for_the_email.png)
+The bank now aims to improve the effectiveness of future campaigns. To achieve this, we will utilize a classification approach within the machine learning framework. Classification is a supervised learning technique where the model learns to predict the class or category of an input based on labeled training data. In this case, the model will learn to predict whether a customer will subscribe to a term deposit based on historical campaign data. The trained model will then be evaluated on unseen data to assess its predictive accuracy before being implemented in live campaigns.
 
-Diagram above shows an example of a classification use case where the algorithms can learn to predict whether a given email is spam or not.
+![Machine Learning Classfication Example!](./images/machine-learning-work-flow-for-object-classification.jpeg)
 
-Source - https://www.datacamp.com/blog/classification-machine-learning
+Picture above shows an example of a classification work flow shows the object classification across three different classes (cat, human and horse) to identify a human
+
+Source - [https://www.datacamp.com/blog/classification-machine-learning](https://www.researchgate.net/figure/Example-of-machine-learning-work-flow-for-object-classification-across-three-different_fig1_350220438)
 
 ### Business Objective Definition
 
