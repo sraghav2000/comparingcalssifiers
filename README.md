@@ -42,12 +42,12 @@ Ensure that you have the necessary libraries installed, such as:
 - `numpy`
 - `matplotlib`
 - `scikit-learn`
-
+- `scipy-stats`
 ---
 
 ## Business Understanding
 
-This project examines a dataset from a Portuguese bank that implemented a series of 17 targeted telemarketing campaigns between 2008 and 2010 to promote long-term deposit subscriptions. These campaigns primarily utilized outbound calls to clients, with some supplementary online banking interactions. The dataset encompasses 79,354 client contacts, each with detailed attributes such as demographics, financial history, and campaign interactions.
+This study examines a dataset from a Portuguese bank that implemented a series of 17 targeted telemarketing campaigns between 2008 and 2010 to promote long-term deposit subscriptions. These campaigns primarily utilized outbound calls to clients, with some supplementary online banking interactions. The dataset encompasses 79,354 client contacts, each with detailed attributes such as demographics, financial history, and campaign interactions.
 
 The overall success rate of these campaigns was relatively low, with only 8% of contacts resulting in successful term deposit subscriptions (6,499 out of 79,354). This analysis aims to gain a deeper understanding of the factors influencing campaign success and identify key predictors of customer receptiveness to these offers.
 
@@ -61,12 +61,21 @@ Source - [https://www.datacamp.com/blog/classification-machine-learning](https:/
 
 ### Business Objective Definition
 
-This dataset was provided for a Portugese banking institution and is a collection of the results of multiple marketing campaigns.  The analysis of the data shows that the marketing campaign was not very successful in getting customers to sign up for the long term deposit product.
+This project aims to analyze a dataset from a Portuguese banking institution to understand the factors that influence the success of their marketing campaigns for long-term deposit products.
 
-From a business objective, the task of this Machine Learning project is to determine which factors could lead to a higher success rate, for example,
-- How does loan products have a positive impact on customer success rate?, for example, do we concentrate on customers with Housing loan?
-- Are we going to have a better success rate with customers with “university degree”?
-- How does the contact method (i.e., cellular) affect whether the success rate for long term loan products?
+Specifically, this analysis seeks to:
+
+**Identify key customer attributes and campaign characteristics** that correlate with successful long-term deposit subscriptions.
+
+**Determine the impact of various factors on campaign success:**
+
+- Loan products: Analyze the impact of existing loans (e.g., housing loans) on customer receptiveness to long-term deposit offers.
+
+- Education level: Investigate the influence of education level (e.g., university degree) on campaign outcomes.
+
+- Contact methods: Assess the effectiveness of different contact methods (e.g., cellular, telephone) on customer engagement and conversion rates.
+
+By identifying these key factors, the bank can optimize future marketing campaigns, target the most promising customer segments, and ultimately improve the overall success rate of their long-term deposit offerings.
 
 ## Data Understanding
 
