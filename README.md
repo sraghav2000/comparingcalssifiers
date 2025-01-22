@@ -98,10 +98,21 @@ Regarding the potential outliers in the three features mentioned, the following 
 - **campaign**: Being contacted more than 30 times within a single marketing campaign seems unusual. It raises the question of why the marketing team continued to reach out so many times—did they not consider the customer uninterested? Most organizations likely wouldn’t persist this long without reconsidering the customer’s engagement. This warrants a deeper investigation to understand why so many contacts were made.
 - **previous**: Outliers in this feature, with values over 5, could be reasonable if a potential customer was part of multiple marketing campaigns. In such cases, it's possible that the customer’s data was recorded across several campaigns, which may explain the high values
 
-- 
 <img src="images/distribution-of-numerical-features.jpg" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
 
-Examining the data, it does not have missing values in the columns/features. Reviewing the features of the datasets like job, marital status, education, housing and personal loans to check if this has an impact on the customers where the marketing campaign was successful. 
+**Data distribution of categorical features:**
+
+- **Occupational Distribution**: Blue-collar workers, admin, and technicians represent approximately 60% of the total customer base.
+- **Marital Status**: The majority of potential customers are married, with over 25,000 customers falling into this category.
+- **Education**: Most potential customers have completed university degree.
+- **Credit Default**: There is a clear imbalance in the 'default' feature, where most customers have no credit default. Despite the importance of this variable for assessing credit risk, it appears to have little correlation with the likelihood of subscribing to a deposit.
+- **Loan and Housing Loan Status**: A larger portion of potential customers do not have loans or housing loans compared to those who do.
+- **Preferred Contact Method**: Cellular is the predominant contact method. 
+- **Marketing Activity**: May saw the highest volume of marketing activities, while December recorded the fewest.
+- **Previous Campaign Outcomes**: The results of previous campaigns are mostly nonexistent, yet all customers listed in the dataset have been involved in previous campaigns, as indicated by the `pdays` feature.
+
+<img src="images/distribution-of-categorical-features.jpg" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
+
 
 Displayed below are some charts providing visualization on some of the observations of the dataset.
 
