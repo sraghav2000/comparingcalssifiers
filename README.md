@@ -168,17 +168,11 @@ For the baseline model, a DecisionTreeClassifier was chosen. This algorithm is w
 
 ## Model Comparisons
 
-In this section, we will compare the performance of the Logistic Regression model to our KNN algorithm, Decision Tree, and SVM models. Using the default settings for each of the models, fit and score each. Also, be sure to compare the fit time of each of the models.
+To establish a baseline for comparison, we will evaluate the performance of four common classification algorithms: Logistic Regression, KNN, Decision Tree, and SVM. Using the default settings for each model, we will train and evaluate their performance on the dataset. This comparison will provide insights into the relative strengths and weaknesses of each model and guide further model selection and optimization.
 
-| Model Name        	| Train Time (s)                      | Train Accuracy                | Test Accuracy 	                | 
-|-------------------	|:---------------------------	|:---------------------:	|:----------------------:	|
-| Logistic Regression   | 0.322                         | 0.8872047448926502        | 0.8875940762320952                 |  
-| KNN                   | 55.8                          | 0.8846033783080711        | 0.8807963097839281                  |  
-| Decision Tree	        | 0.376                         | 0.8911935069890049        | 0.884761673545359                 |  
-| SVM                   | 24.4                          | 0.8873087995560335        | 0.8875131504410455                 |  
-|                       |                               |                           |                        	| 
+<img src="images/models-comparison.png" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
 
-Looking at the results from the model comparison, Logistic Regression had the best numbers across the three metrics with lowest train time in seconds, highest training and testing accuracy scores.
+Logistic Regression emerged as the most efficient and accurate model. It achieved the highest training and testing accuracies while also exhibiting the fastest training time, making it a strong contender for this classification task.
 
 ## Improving the Model
 
