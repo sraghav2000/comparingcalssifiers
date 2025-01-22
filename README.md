@@ -79,6 +79,28 @@ By identifying these key factors, the bank can optimize future marketing campaig
 
 ## Data Understanding
 
+The description of the data showed that:
+- The mean of age of potential clients is about 40 years, with the youngest is 17 years and the oldest is 98 years. The distribution seems reasonably wide, given the high standard deviation (10.42)
+- The duration of interactions exhibits significant variability, with a mean of 258.28 seconds and a high standard deviation of 259.28, ranging from 0 seconds, potentially indicating unsuccessful or extremely brief contacts, to an extreme of 4,918 seconds (approximately 82 minutes), which may suggest unusually prolonged interactions or data entry errors.
+- The mean value of 2.57 suggests that most clients are contacted 2 to 3 times in a campaign, with a max of 56. Could be an error which seems to be an outlier (extremely high frequency) may need to be excluded later on.
+- pdays (days since last contact) indicates the number of days since the last contact with a client. However, the majority of records have a value of 999, which typically represents clients who have not been previously contacted according to the database. 999 - may be commonly used as a placeholder for clients with no previous contact history.
+
+**Data distribution of numerical features:**
+- All numerical features in the dataset are non-normally distributed, and the null hypothesis of normality is rejected for each.
+- This means we should consider alternative methods or transformations for handling the data
+- We can see from the plot that 'age', 'duration', 'campaign', and 'previous' features are heavily skewed towards the left. Also  'campaign', and 'previous' seem to have some outliers.
+- The majority of both acceptances and refusals of the subscription offer come from customers in their 30s.
+
+A clear distinction exists between the 'yes' and 'no' categories in the **duration** feature. Generally, the longer the duration of the call, the higher the likelihood that a potential customer will subscribe to the term deposit.
+
+Regarding the potential outliers in the three features mentioned, the following scenarios are possible:
+- **pdays**: Contacting a lead after more than 1000 days is atypical, but still plausible. Sometimes, the customer might have been removed from the marketing list but later added back after showing renewed interest. It’s also possible that the system continued to track days even after the customer was removed, which would explain the unusually high values.
+- **campaign**: Being contacted more than 30 times within a single marketing campaign seems unusual. It raises the question of why the marketing team continued to reach out so many times—did they not consider the customer uninterested? Most organizations likely wouldn’t persist this long without reconsidering the customer’s engagement. This warrants a deeper investigation to understand why so many contacts were made.
+- **previous**: Outliers in this feature, with values over 5, could be reasonable if a potential customer was part of multiple marketing campaigns. In such cases, it's possible that the customer’s data was recorded across several campaigns, which may explain the high values
+
+- 
+<img src="images/distribution-of-numerical-features.png" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
+
 Examining the data, it does not have missing values in the columns/features. Reviewing the features of the datasets like job, marital status, education, housing and personal loans to check if this has an impact on the customers where the marketing campaign was successful. 
 
 Displayed below are some charts providing visualization on some of the observations of the dataset.
