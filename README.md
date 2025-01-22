@@ -122,31 +122,18 @@ Additional plots are provided below for visualization on some of the features of
   <img src="images/job-deposit-subscription.png" alt="Image 1" width="40%">
 </div>
 
-![Bar Plot of Term Deposit Outcome by Education!](./images/Bar-Plot-Term-Deposit-by-Education.jpeg)
 
+## Findings on Data
 
-![Pie Chart of Term Deposit Outcome by Loan Type!](./images/Pie-Chart-Plot-Term-Deposit-by-Loan-Type.jpeg)
+This analysis examined factors influencing term deposit subscriptions at a Portuguese bank. Here are the key takeaways:
+* **Age:** Surprisingly, the highest subscription rates were for the youngest (20s) and oldest (60+) age groups.
+* **Employment:** Unemployed, retired, and student demographics had higher subscription rates than most employed groups. Blue-collar workers had the lowest rate.
+* **Marital Status:** Single individuals subscribed more than married or divorced.
+* **Education:** The relationship between education and subscription wasn't clear. Lower education generally had lower rates, but a university degree also had a relatively low rate.
+* **Loans:** Individuals with housing loans had a slightly higher subscription rate than those without. Personal loans showed a weak negative correlation with subscriptions.
+* **Contact Method:** Cellular phone contact resulted in a significantly higher subscription rate compared to traditional phone calls. Call duration also had a positive correlation with successful subscriptions.
 
-The first thing that was apparent from the provided data was that the low success rate of the marketing campaign in getting customers to sign up for the long term deposit product regardless of the features recorded for the customers (i.e., Education, Marital Status, job, contact etc.).
-
-The one slight exception are customers with housing loan types where 52.4% signed up for the long term deposit product vs. 45.2% who did not.
-
-An Alternative view on the data is to review number of succesful campaigns to see how features like education and job had a positive impact on the number of successful campaigns. See plots below:
-
-<div style="display:flex">
-     <div style="flex:1;padding-right:10px;">
-          <img src="images/Bar-Plot-Term-Deposit-by-Education-Deposit-Yes.jpeg" width="600"/>
-     </div>
-     <div style="flex:1;padding-left:10px;">
-          <img src="images/Bar-Plot-Term-Deposit-by-Job-Deposit-Yes.jpeg" width="600"/>
-     </div>
-</div>
-
-Reviewing the plots where the customer signed up for the Bank Product/Marketing campaign was successful, you can observe the following:
-
-- On Education, university degree folks said yes to the bank loan product
-- For Job, bank had the most success with folks in admin role which is very broad, followed by Technician, then blue-collar
-
+These findings suggest the bank can improve targeting by focusing on younger, older, unemployed, retired, student, and single demographics. Cellular outreach with longer call durations might also be more effective. Further analysis into factors like income and financial knowledge might be beneficial.
 
 ## Data Preparation
 
