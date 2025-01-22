@@ -122,7 +122,6 @@ Additional plots are provided below for visualization on some of the features of
   <img src="images/job-deposit-subscription.png" alt="Image 1" width="40%">
 </div>
 
-
 ## Findings on Data
 
 This analysis examined factors influencing term deposit subscriptions at a Portuguese bank. Here are the key takeaways:
@@ -137,12 +136,18 @@ These findings suggest the bank can improve targeting by focusing on younger, ol
 
 ## Data Preparation
 
-Apart from the imbalanced nature of the dataset, the following was done to prepare the dataset for modeling:
-- Renamed "Y" feature to "deposit" to make it more meaningful
-- Use features 1 - 7 (i.e., job, marital, education, default, housing, loan and contact ) to create a feature set
-- Use ColumnTransformer to selectively apply data preparation transforms, it allows you to apply a specific transform or sequence of transforms to just the numerical columns, and a separate sequence of transforms to just the categorical columns
-- Use LabelEncoder to encode labels of the target column
-- With your data prepared, split it into a train and test set. Next, we will split the data into a training set and a test set using the train_test_split function. We will use 30% of the data as the test set
+To prepare the dataset for modeling, several steps were taken:
+**Data Cleaning:**
+The target variable "Y" was renamed to "deposit" for better readability and interpretability.
+**Feature Selection:**
+An initial set of features was selected: 'job', 'marital', 'education', 'default', 'housing', 'loan', and 'contact'.
+**Data Transformation:**
+ColumnTransformer was employed to apply appropriate transformations to different data types:
+**Categorical Features:** Transformed using techniques like one-hot encoding or label encoding.
+**Numerical Features:** Transformed using techniques like scaling or normalization.
+**Target Encoding:** The target variable ("deposit") was encoded using LabelEncoder to convert categorical labels (e.g., "yes", "no") into numerical values (e.g., 1, 0).
+**Data Splitting:** The dataset was divided into training and testing sets using train_test_split. 30% of the data was allocated to the test set for unbiased model evaluation.
+This data preparation process ensures that the data is in a suitable format for machine learning model training and evaluation.
 
 
 ## Baseline Model Comparison
