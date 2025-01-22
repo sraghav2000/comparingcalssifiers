@@ -176,23 +176,34 @@ Logistic Regression emerged as the most efficient and accurate model. It achieve
 
 ## Improving the Model
 
-This dataset is so imbalanced when you look at the Exploratory section of this Notebook. Using these features to see if we can get a higher percentage of successful sign up for long term product did not provide a positive result with the exception of customer that have housing loan with a number of 52.4%
+**Feature Engineering and Exploration:**
 
-Using Grid Search to create models with the different parameters and evaluate the performance metrics
+We explored the features for their importance in predicting target variable. We visualize the relationship between features and the target variable using techniques like box plot. This helped us to identify the feature that doesn't add meaningful value to the predictions, it might be best to remove it or transform it into a more meaningful feature.
 
-| Model Name        	| Train Time (s)                      | Best Parameters                                          | Best Score 	                | 
-|-------------------	|:---------------------------	|:-------------------------------------------------:	         |:----------------------:	|
-| Logistic Regression   | 64                            | C:0.001, penalty:l2, solver: liblinear	                     | 0.8872394393842521                |  
-| KNN                   | 302                           | n_neighbors: 17                                                | 0.8855397848500199                 |  
-| Decision Tree         | 15.7                          | criterion: entropy, max_depth: 1, model__min_samples_leaf: 1   | 0.8872394393842521                  |  
-| SVM                   | 490                           | C: 0.1, kernel: rbf                                            | 0.8872394393842521                 |  
-|                       |                               |                                                                |                        	| 
+<img src="images/features-importance.png" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
 
-For SVM, I tried a number of paramaters which took a long time (i.e., some running over 2 hours etc) and did not finish because I had to abort the processing. Finally got the following parameter to work which took over 8 minutes as shown above.
+**GridsearchCV of all the models**
 
- - param_grid_svc2 = { 'model__C': [ 0.1, 0.5, 1.0 ], 'model__kernel': ['rbf','linear'] }
+<img src="images/gridsearchcv-comparison-of-models.png" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
 
-Interesting observation in that Logistic Regression, Decision Tree and Support Vector Machines had the same best score with their different best parameters. This leaves KNN with the lowest best score. All scores were high over 85% accuracy.
+As per the result of the best-performing hyperparameters and their corresponding scores for different models:
+- Logistic Regression
+Best Parameters: 'C': 0.01, 'solver': 'liblinear'
+Best Score: 0.8873441
+- K-Nearest Neighbors (KNN)
+Best Parameters: 'metric': 'euclidean', 'n_neighbors': 3
+Best Score: 0.8803032
+- Decision Tree
+Best Parameters: 'max_depth': None, 'min_samples_leaf': 1
+Best Score: 0.8872233
+- Support Vector Machine (SVM)
+Best Parameters: 'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'
+Best Score: 0.887344
+
+**Findings:**
+- The Logistic Regression and SVM models both achieved the highest score of 0.887344, making them the best performers among the models tested.
+- The KNN model had a slightly lower score of 0.8803032, while the Decision Tree was very close to the top performers with a score of 0.8872233.
+- This suggests that for this particular task, Logistic Regression and SVM with the specified hyperparameters are the most effective models.
 
 ## Next Steps and Recommendations
 
