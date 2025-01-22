@@ -9,7 +9,7 @@ GitHub Repository for work done on Professional Certificate in Machine Learning 
 - [Business Understanding](#business-understanding)
 - [Data Understanding](#data-understanding)
 - [Data Preparation](#data-preparation)
-- [Baseline Model Comparison](#Baseline-Model-Comparison)
+- [Baseline Model Comparison](#Baseline-Model)
 - [Model Comparisons](#Model-Comparisons)
 - [Improving the Model](#Improving-the-Model)
 - [Findings](#findings)
