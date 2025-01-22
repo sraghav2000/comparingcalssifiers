@@ -121,8 +121,6 @@ Additional plots are provided below for visualization on some of the features of
   <img src="images/job-deposit-subscription.png" alt="Image 1" width="40%">
 </div>
 
-## Findings on Data
-
 This analysis examined factors influencing term deposit subscriptions at a Portuguese bank. Here are the key takeaways:
 * **Age:** Surprisingly, the highest subscription rates were for the youngest (20s) and oldest (60+) age groups.
 * **Employment:** Unemployed, retired, and student demographics had higher subscription rates than most employed groups. Blue-collar workers had the lowest rate.
@@ -156,6 +154,7 @@ This data preparation process ensures that the data is in a suitable format for 
 
 
 ## Baseline Model
+
 For the baseline model, a DecisionTreeClassifier was chosen. This algorithm is well-suited for multi-class classification tasks. Decision Trees operate by recursively partitioning the data based on different feature subsets and applying decision rules at each node to create a hierarchical structure for making predictions.
 
 <img src="images/confusion-matrix.png" alt="Image 1" width="70%" style="display:inline-block; margin-left: 15%; margin-right: 15%;">
